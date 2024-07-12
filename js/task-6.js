@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const amount = parseInt(input.value);
     if (amount >= 1 && amount <= 100) {
       createBoxes(amount);
-      input.value = ''; // Очищення значення в інпуті
+      input.value = ''; 
     } else {
       alert('Please enter a number between 1 and 100');
     }
@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
   destroyBtn.addEventListener('click', destroyBoxes);
 
   function createBoxes(amount) {
-    boxesContainer.innerHTML = ''; // Очищення попередніх елементів
+    boxesContainer.innerHTML = ''; 
     const boxes = [];
 
     for (let i = 0; i < amount; i++) {
@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   function destroyBoxes() {
-    boxesContainer.innerHTML = ''; // Очищення вмісту контейнера
+    boxesContainer.innerHTML = ''; 
   }
 
   function getRandomHexColor() {
